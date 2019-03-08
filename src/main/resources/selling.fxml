@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store.Selling">
+   <children>
+      <Label layoutX="183.0" layoutY="4.0" text="Расход" />
+      <TableView fx:id="tableSelling" layoutY="37.0" prefHeight="263.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="C1" prefWidth="40.0" text="№" />
+          <TableColumn fx:id="C2" prefWidth="89.0" text="ID" />
+            <TableColumn fx:id="C3" prefWidth="122.0" text="Цена реализации" />
+            <TableColumn fx:id="C4" prefWidth="85.0" text="Количество" />
+            <TableColumn fx:id="C5" prefWidth="63.0" text="Группа" />
+        </columns>
+      </TableView>
+      <Button fx:id="BtnLoad" layoutX="310.0" layoutY="5.0" mnemonicParsing="false" onAction="#pressBtnLoad" style="-fx-background-color: #FFB6C1;" text="Обновить" />
+   </children>
+</AnchorPane>

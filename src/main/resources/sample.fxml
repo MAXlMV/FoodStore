@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #E6E6FA;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="store.Controller">
+   <children>
+      <AnchorPane layoutY="54.0" prefHeight="447.0" prefWidth="800.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <TableView fx:id="tableProduct" layoutX="132.0" prefHeight="447.0" prefWidth="669.0" style="-fx-background-color: #F0F8FF;">
+              <columns>
+                <TableColumn fx:id="C1" minWidth="20.0" prefWidth="46.0" style="-fx-background-color: #F5F5DC;" text="№" />
+                <TableColumn fx:id="C2" prefWidth="126.0" style="-fx-background-color: #F5F5DC;" text="Название" />
+                  <TableColumn fx:id="C3" prefWidth="99.0" style="-fx-background-color: #F5F5DC;" text="Цена ДО" />
+                  <TableColumn fx:id="C4" prefWidth="87.0" style="-fx-background-color: #F5F5DC;" text="Цена ПОСЛЕ" />
+                  <TableColumn fx:id="C5" minWidth="0.0" prefWidth="96.0" style="-fx-background-color: #F5F5DC;" text="Количество" />
+                  <TableColumn fx:id="C6" prefWidth="142.0" style="-fx-background-color: #F5F5DC;" text="Годен до" />
+                  <TableColumn fx:id="C7" prefWidth="71.0" style="-fx-background-color: #F5F5DC;" text="Группа" />
+              </columns>
+            </TableView>
+            <Button fx:id="BtnAdd" layoutX="15.0" layoutY="45.0" mnemonicParsing="false" onAction="#pressBtnAD" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #FFB6C1;" text="Добавить" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="BtnSell" layoutX="15.0" layoutY="145.0" mnemonicParsing="false" onAction="#pressBtnSel" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #FFB6C1;" text="Расход" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="BtnDel" layoutX="15.0" layoutY="245.0" mnemonicParsing="false" onAction="#pressBtnDel" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #FFB6C1;" text="Удалить" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Button>
+            <Button fx:id="BtnCom" layoutX="15.0" layoutY="345.0" mnemonicParsing="false" onAction="#pressBtnCom" prefHeight="44.0" prefWidth="110.0" style="-fx-background-color: #FFB6C1;" text="Приход" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="239.0" layoutY="14.0" text="Продуктовый магазин" textFill="#d70812">
+         <font>
+            <Font name="DejaVu Sans Bold" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="BtnLoad" layoutX="698.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressBtnLoad" style="-fx-background-color: #FFB6C1;" text="Обновить" />
+   </children>
+</AnchorPane>
